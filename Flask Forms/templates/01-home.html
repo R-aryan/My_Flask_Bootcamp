@@ -1,0 +1,20 @@
+
+<h1>Welcome to Puppy Surveys</h1>
+<form  method="POST">
+    {# This hidden_tag is a CSRF security feature. #}
+    {{ form.hidden_tag() }}<br>
+
+    <br>{{ form.breed.label }}{{ form.breed() }}<br>
+
+    <br>{{form.neutered.label}}{{ form.neutered() }}<br>
+
+    <br>{{form.food_choice.label}}{{form.food_choice()}}<br>
+
+    <br>{{form.mood.label}}{{form.mood()}}<br>
+
+    <br>Any other feedback ? <br>
+    <br> {{form.feedback}}<br>
+    <br> {{form.submit}}<br>
+
+
+</form>
